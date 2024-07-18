@@ -32,7 +32,7 @@ const canvas = document.querySelector('.canvas');
 
 // Create a WebGL renderer
 const renderer = new three.WebGLRenderer({ canvas, antialias: true });
-renderer.setPixelRatio(2);
+renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(size.width, size.height);
 
 //Set up the orbit coontrols
